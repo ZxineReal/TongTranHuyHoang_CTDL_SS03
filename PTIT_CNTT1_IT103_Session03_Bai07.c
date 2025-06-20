@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void sumRow(int *arr[], int rows, int cols, int k);
+void sumRow(int *arr[], int cols, int k);
 
 int main() {
     int rows;
@@ -45,7 +45,7 @@ int main() {
     if (k > rows || k < 0) {
         printf("Hang can tinh khong ton tai!\n");
     } else {
-        sumRow(arr, rows, cols, k);
+        sumRow(arr, cols, k);
     }
 
     for (int i = 0; i < rows; i++) {
@@ -55,7 +55,7 @@ int main() {
     return 0;
 }
 
-void sumRow(int *arr[], int rows, int cols, int k) {
+void sumRow(int *arr[], int cols, int k) {
     int sum = 0;
     for (int j = 0; j < cols; j++) {
         sum += arr[k-1][j];
