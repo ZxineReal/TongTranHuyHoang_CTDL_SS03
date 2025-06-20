@@ -42,7 +42,7 @@ int main() {
 
     printf("Moi ban nhap vao hang muon tinh tong: ");
     scanf("%d", &k);
-    if (k >= rows || k < 0) {
+    if (k > rows || k < 0) {
         printf("Hang can tinh khong ton tai!\n");
     } else {
         sumRow(arr, rows, cols, k);
