@@ -49,6 +49,10 @@ int main() {
 }
 
 void findMainDiagon(int *arr[], int rows, int cols) {
+    if (rows != cols) {
+        printf("Khong ton tai duong cheo chinh!\n");
+        return;
+    }
     int sum = 0;
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
